@@ -7,9 +7,14 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "pujiaxin33" => "317437084@qq.com" }
   s.platform     = :ios, "13.0"
-  s.swift_version = "5.0"
+
   s.source       = { :git => "https://github.com/pujiaxin33/JXPatternLock.git", :tag => "#{s.version}" }
   s.framework    = "UIKit"
   s.source_files  = "Sources", "Sources/**/*"
   s.requires_arc = true
+
+  s.ios.deployment_target = '13.0'
+  s.osx.deployment_target = '10.15'
+  s.watchos.deployment_target = '6.0'
+  s.swift_version = '5.0'
 end
